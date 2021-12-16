@@ -1,0 +1,49 @@
+.TimerButton{
+    width: 300px;
+    bottom: 0px;
+}
+
+.Timer{
+    display: flex;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid rgb(195, 244, 248);
+    width: 300px;
+    height: 313px;
+    margin-bottom: 20px;
+    margin-left: 25px;
+    border-radius: 50%;
+    background-color: white;
+    
+}
+
+span{
+    font-size: 60px;
+    font-family: 'Courier New', Courier, monospace;
+}
+/* Animation borrowed from here https://codepen.io/michellymelo/pen/xMOEpR */
+.Timer.congrats{
+    border: 3px solid rgb(28, 173, 23);
+    animation-name: congrats;
+    animation-duration: 1s;
+    animation-iteration-count: 120;
+}
+
+@keyframes congrats{
+    50% {
+      border-color: #bef6bc;
+      background-color: #e7ffe7;
+    }
+  }
+
+.roundsintimer{
+    position: absolute;
+    top: 60px; 
+}
+
+.donetimer{
+    position: absolute;
+    top: 80px; 
+}
